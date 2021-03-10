@@ -10,13 +10,34 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9KH1YDG2R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-D9KH1YDG2R');
   </script>
-</head>
 
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
+  </head>
 <body>
   <div>
     <div class="bg-gradient-to-r from-red-200 via-orange-200 to-red-900 mx-6 -mt-1 rounded-3xl transform shadow-lg z-1 -rotate-3">
@@ -46,7 +67,7 @@
             <div class="educationSection mt-8 mb-4">
               <span class="text-red-800 text-bold font-semibold sectionHeader"><i class="fas fa-graduation-cap "></i> Education</span>
               <div class="educationItem my-1">
-                <a href="https://drive.google.com/file/d/1kLTRwweX6dZcVHYmiZ2Txi7KGl9UAQEu/view?usp=sharing" class="degreeDescription font-medium text-indigo-900 ">B.S.Eng. Software/ICT Engineering <i class="fas fa-external-link-alt text-xs"></i></a>
+                <a onClick="ga('send', 'event', 'Button', 'Click', 'Transcript');" href="https://drive.google.com/file/d/1kLTRwweX6dZcVHYmiZ2Txi7KGl9UAQEu/view?usp=sharing" class="degreeDescription font-medium text-indigo-900 ">B.S.Eng. Software/ICT Engineering <i class="fas fa-external-link-alt text-xs"></i></a>
                 <p class="schoolName">VIA University College</p>
                 <p class="date">Aug 2018 - Feb 2022</p>
               </div>
